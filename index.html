@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --text-light: #8b949e;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #f0f6fc;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: #f0f6fc;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text {
+            color: var(--text-color);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .projects-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card h3 {
+            color: #f0f6fc;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .project-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Seu Nome Aqui</h1>
+            <p>Desenvolvedor(a) Full Stack / Frontend / Estudante</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:seu-email@email.com">Contato</a>
+            </div>
+        </header>
+
+        <!-- Sobre Mim -->
+        <section>
+            <h2>Sobre Mim</h2>
+            <p class="about-text">
+                Escreva um breve resumo sobre você, sua trajetória na tecnologia, o que você está estudando atualmente e quais problemas gosta de resolver. Gostou deste design inspirado no tema Dark do GitHub?
+            </p>
+        </section>
+
+        <!-- Tecnologias -->
+        <section>
+            <h2>Tecnologias</h2>
+            <div class="skills-list">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Node.js</span>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section>
+            <h2>Projetos Principais</h2>
+            <div class="projects-grid">
+                
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div>
+                        <h3>Projeto 1</h3>
+                        <p>Descrição curta do que o seu projeto faz, quais problemas ele resolve e as tecnologias utilizadas.</p>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">Ver Repositório &rarr;</a>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div>
+                        <h3>Projeto 2</h3>
+                        <p>Descrição curta do que o seu projeto faz, quais problemas ele resolve e as tecnologias utilizadas.</p>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">Ver Repositório &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2026 - Desenvolvido por Seu Nome</p>
+        </footer>
+    </div>
+
+</body>
+</html>
